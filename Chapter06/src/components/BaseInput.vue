@@ -41,7 +41,7 @@ export default {
       type: Object,
       required: false,
       validator($v) {
-        return $v.hasOwnProperty('$model');
+        return $v.hasOwnProperty.call('$model');
       }
     }
   }
